@@ -1,0 +1,116 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mi Tiendita</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <div class="brand">
+          <div class="logo"></div>
+          <span>La Tiendita de Don Pepe</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="hero">
+        <h1>Bienvenido a la Tiendita de Don Pepe</h1>
+        <p>Explora nuestros productos destacados.</p>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <img
+            class="thumb"
+            src="https://http2.mlstatic.com/D_NQ_NP_985294-MCO53731081900_022023-O.webp"
+            alt="Bolsa de café tostado"
+          />
+          <div class="card-body">
+            <h2 class="title">Café Andino 500g</h2>
+            <p class="desc">
+              Café tostado de altura con notas a chocolate y caramelo. Ideal
+              para prensa francesa o espresso.
+            </p>
+            <div class="price-row">
+              <span class="price">S/ 24.90</span>
+              <span class="chip">En stock</span>
+            </div>
+            <div class="actions">
+              <button onclick="agregar('Café Andino 250g')">
+                Agregar al carrito
+              </button>
+              <button class="secondary" onclick="info('Café Andino 250g')">
+                Detalles
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            class="thumb"
+            src="https://tikafarma.com/cdn/shop/files/te-matcha-real-food-50g_e6ae9efa-f22c-43ca-b335-d80cfd937fd8.jpg?v=1733976877"
+            alt="Caja de té verde"
+          />
+          <div class="card-body">
+            <h2 class="title">Té Verde Matcha</h2>
+            <p class="desc">
+              Polvo fino de matcha para bebidas frías y calientes. Aporta
+              energía y un sabor suave.
+            </p>
+            <div class="price-row">
+              <span class="price">S/ 29.50</span>
+              <span class="chip">Nuevo</span>
+            </div>
+            <div class="actions">
+              <button onclick="agregar('Té Verde Matcha')">
+                Agregar al carrito
+              </button>
+              <button class="secondary" onclick="info('Té Verde Matcha')">
+                Detalles
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            class="thumb"
+            src="https://lacapritxeria.com/wp-content/uploads/2022/09/Lalola-Almendra-e1681326994875.jpg"
+            alt="Paquete de galletas artesanales"
+          />
+          <div class="card-body">
+            <h2 class="title">Galletas Artesanales</h2>
+            <p class="desc">
+              Crujientes, con chispas de chocolate. Hechas con mantequilla y
+              vainilla natural.
+            </p>
+            <div class="price-row">
+              <span class="price">S/ 14.00</span>
+              <span class="chip">Popular</span>
+            </div>
+            <div class="actions">
+              <button onclick="agregar('Galletas Artesanales')">
+                Agregar al carrito
+              </button>
+              <button class="secondary" onclick="info('Galletas Artesanales')">
+                Detalles
+              </button>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <span>© <span id="year"></span> La Tiendita de Don Pepe</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
